@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman Arkham City</title>
+
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: whitesmoke">
+    <h1>Batman Arkham City</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li>
+          <a href="gameplay-and-screenshots.html"> Gameplay and Screenshots</a>
+        </li>
+      </ul>
+    </nav>
+    <h2>The story and development</h2>
+    <br />
+    <i>
+      Batman: Arkham City is a 2011 action-adventure game developed by
+      Rocksteady Studios and published by Warner Bros. Interactive
+      Entertainment. Based on the DC Comics superhero Batman, it is the sequel
+      to the 2009 video game Batman: Arkham Asylum and the second installment in
+      the Batman: Arkham series. Written by veteran Batman writer Paul Dini with
+      Paul Crocker and Sefton Hill, Arkham City was inspired by the long-running
+      comic book mythos. In the game's main storyline, Batman is incarcerated in
+      Arkham City, a super-prison enclosing the decaying urban slums of
+      fictional Gotham City. He must uncover the secret behind a sinister scheme
+      orchestrated by the facility's warden, Hugo Strange. The game's leading
+      characters are predominantly voiced by actors from the DC Animated
+      Universe, with Kevin Conroy and Mark Hamill reprising their roles as
+      Batman and the Joker, respectively.
+    </i>
+    <br />
+
+    <form name="Crime" id="Crime-location" method="get">
+      <h3>&nbsp;&nbsp;&nbsp;Which is you're favorite Arkham game?</h3>
+
+      <label for="Game">Whats your favorite Arkham game</label>
+      <select name="GameSelect" id="Game" required>
+        <optgroup label="Batman Arkham games">
+          <option value="Batman Arkham Asylum ">Batman Arkham Asylum</option>
+          <option value="Batman Arkham City">Batman Arkham City</option>
+          <option value="Batman Arkham Knight">Batman Arkham Knight</option>
+        </optgroup>
+      </select>
+
+      <br />
+      <br />
+      <label for="Crime Location">
+        Please enter the place you saw crime being commited [required]:
+      </label>
+
+      <input type="text" name="Crime" id="Crime-location" required />
+      <input type="checkbox" />
+      <br />
+      <br />
+      <label for="Crime-Amount">
+        How many people are commiting the crime[required]
+      </label>
+      <input
+        type="number"
+        name="Crime"
+        id="Crime-location"
+        maxlength="100"
+        required
+      />
+      <input type="submit" />
+      <br />
+      <br />
+      <br />
+      <br />
+      <table>
+        <tr>
+          <th>&nbsp;&nbsp;&nbsp;Characters&nbsp;&nbsp;&nbsp;</th>
+          <th>&nbsp;&nbsp;&nbsp;Voice Actor&nbsp;&nbsp;&nbsp;</th>
+          <th>&nbsp;&nbsp;&nbsp;Occupation&nbsp;&nbsp;&nbsp;</th>
+        </tr>
+        <tr>
+          <td>Joker</td>
+          <td>Mark Hamill</td>
+          <td>Serial Killer</td>
+        </tr>
+        <tr>
+          <td>Batman</td>
+          <td>Kevin Conroy</td>
+          <td>Vigalainte</td>
+        </tr>
+        <tr>
+          <td>James Gordon</td>
+          <td>David Kaye</td>
+          <td>Police Commissioner</td>
+        </tr>
+      </table>
+      <b>Website rating</b>
+      <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="0"
+        max="11"
+        style="background-color: black"
+      />
+    </form>
+  </body>
+</html>
